@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form method="post">
+  {% csrf_token %}
+  Are You sure to DELETE this Task?
+  <button type="submit" class="btn btn-info" >Confirm</button>
+</form>
+{% endblock %}
